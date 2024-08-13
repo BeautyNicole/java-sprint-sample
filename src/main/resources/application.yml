@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: "springboot_cache_sample"
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+
+server:
+  port: 8081
+  servlet:
+    session:
+      timeout: 10
+      cookie:
+        name: "example"
+        path: "/"
+        http-only: true
